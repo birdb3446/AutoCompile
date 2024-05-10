@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Optionally, allow cleartext traffic globally -->
+    <base-config cleartextTrafficPermitted="true">
+        <!-- Additional base configuration options can be added here -->
+    </base-config>
+
+    <!-- Optionally, define domain-specific configurations -->
+    <!-- In this example, we're allowing cleartext traffic for example.com -->
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">example.com</domain>
+    </domain-config>
+
+    <!-- You can define more domain-specific configurations as needed -->
+</network-security-config>
